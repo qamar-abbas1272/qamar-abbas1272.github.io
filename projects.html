@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Design Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="projects.css">
+
+</head>
+
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold">Portfolio</div>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden p-2" aria-expanded="false">
+                    <i id="icon-menu" class="fas fa-bars"></i>
+                    <i id="icon-close" class="fas fa-times hidden"></i>
+                </button>
+
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="block py-2 hover:text-blue-400">Home</a>
+                    <a href="#" class="block py-2 hover:text-blue-400">Projects</a>
+                    <a href="index.html#about" class="block py-2 hover:text-blue-400">About</a>
+                    <a href="index.html#contact" class="block py-2 hover:text-blue-400">Contact</a>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 hover:text-blue-400">Home</a>
+                <a href="#" class="block py-2 hover:text-blue-400">Projects</a>
+                <a href="index.html#about" class="block py-2 hover:text-blue-400">About</a>
+                <a href="index.html#contact" class="block py-2 hover:text-blue-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto py-8">
+        <div class="masonry-grid">
+            <!-- Project - Restaurant Menu (Minimal Slider) -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <div class="image-container playing" id="a4Container">
+                        <img id="a4Slider" src="./media/a4_1.jpg" alt="Menu Page 1" class="project-image">
+                        <button class="carousel-btn prev" onclick="manualPrevA4Image()"
+                            ontouchstart="manualPrevA4Image()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next" onclick="manualNextA4Image()"
+                            ontouchstart="manualNextA4Image()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Restaurant Menu Design</h3>
+                        <p class="text-gray-300 text-sm mb-3">4-Page A4 Size Menu Design</p>
+                        <p class="text-gray-400 text-xs mb-4">Elegant multi-page restaurant menu design with clean
+                            layout and branding.</p>
+                        <a href="./media/a4_1.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Full Design <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project - Hushe Posters (Minimal Slider) -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <div class="image-container playing" id="husheContainer">
+                        <img id="husheSlider" src="./media/hushe_poster1.jpg" alt="Hushe Poster 1"
+                            class="project-image">
+                        <button class="carousel-btn prev" onclick="manualPrevHusheImage()"
+                            ontouchstart="manualPrevHusheImage()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next" onclick="manualNextHusheImage()"
+                            ontouchstart="manualNextHusheImage()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Hushe Valley Posters</h3>
+                        <p class="text-gray-300 text-sm mb-3">Visual Storytelling through Posters</p>
+                        <p class="text-gray-400 text-xs mb-4">Cultural and scenic poster designs inspired by the
+                            beautiful Hushe region.</p>
+                        <a href="./media/hushe_poster1.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Full Design <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project - Dirleh Hotel A4 Digital Posters (Minimal Slider) -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <div class="image-container playing" id="a4dContainer">
+                        <img id="a4dSlider" src="./media/a4d_1.jpg" alt="A4 Digital Poster 1" class="project-image">
+                        <button class="carousel-btn prev" onclick="manualPrevA4dImage()"
+                            ontouchstart="manualPrevA4dImage()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next" onclick="manualNextA4dImage()"
+                            ontouchstart="manualNextA4dImage()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">A4D Posters</h3>
+                        <p class="text-gray-300 text-sm mb-3">A4 Digital Prints Collection</p>
+                        <p class="text-gray-400 text-xs mb-4">A modern twist on traditional poster design using digital
+                            tools and vibrant colors.</p>
+                        <a href="./media/a4d_1.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Full Design <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project - Hiring Post (2 Image Slider) -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <div class="image-container playing" id="hiringContainer">
+                        <img id="hiringSlider" src="./media/hiring_post1.jpg" alt="Hiring Post 1" class="project-image">
+                        <button class="carousel-btn prev" onclick="manualPrevHiringImage()"
+                            ontouchstart="manualPrevHiringImage()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next" onclick="manualNextHiringImage()"
+                            ontouchstart="manualNextHiringImage()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Hiring Posts</h3>
+                        <p class="text-gray-300 text-sm mb-3">Job Recruitment Designs</p>
+                        <p class="text-gray-400 text-xs mb-4">Professional hiring post templates designed for social
+                            platforms and websites.</p>
+                        <a href="./media/hiring_post1.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Sample <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project - North Digit Posters (4 Images Slider) -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <div class="image-container playing" id="northDigitContainer">
+                        <img id="northDigitSlider" src="./media/north_digit1.jpg" alt="North Digit 1"
+                            class="project-image">
+                        <button class="carousel-btn prev" onclick="manualPrevNorthDigitImage()"
+                            ontouchstart="manualPrevNorthDigitImage()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next" onclick="manualNextNorthDigitImage()"
+                            ontouchstart="manualNextNorthDigitImage()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">North Digit Posters</h3>
+                        <p class="text-gray-300 text-sm mb-3">Corporate Branding Slides</p>
+                        <p class="text-gray-400 text-xs mb-4">Series of posters crafted for North Digit's branding and
+                            promotions.</p>
+                        <a href="./media/north_digit1.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Sample <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project - Rewaj Restaurant Posters (2 Images Slider) -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <div class="image-container playing" id="rewajContainer">
+                        <img id="rewajSlider" src="./media/rewaj_restaurant1.jpg" alt="Rewaj Restaurant"
+                            class="project-image">
+                        <button class="carousel-btn prev" onclick="manualPrevRewajImage()"
+                            ontouchstart="manualPrevRewajImage()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next" onclick="manualNextRewajImage()"
+                            ontouchstart="manualNextRewajImage()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Rewaj Restaurant Posters</h3>
+                        <p class="text-gray-300 text-sm mb-3">Food & Beverage Branding</p>
+                        <p class="text-gray-400 text-xs mb-4">Posters designed for Rewaj Restaurant's launch campaign
+                            and social media branding.</p>
+                        <a href="./media/rewaj_restaurant1.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Sample <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project - Property Ad Posters (2 Images Slider) -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <div class="image-container playing" id="propertyContainer">
+                        <img id="propertySlider" src="./media/property_ad_1.png" alt="Property Advertisement"
+                            class="project-image">
+                        <button class="carousel-btn prev" onclick="manualPrevPropertyImage()"
+                            ontouchstart="manualPrevPropertyImage()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next" onclick="manualNextPropertyImage()"
+                            ontouchstart="manualNextPropertyImage()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Property Ad Posters</h3>
+                        <p class="text-gray-300 text-sm mb-3">Real Estate Marketing</p>
+                        <p class="text-gray-400 text-xs mb-4">Minimal, modern posters created for housing and commercial
+                            property advertising campaigns.</p>
+                        <a href="./media/property_ad_1.png" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Sample <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Project - Royal Business Card (2 Images Slider) -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <div class="image-container playing" id="royalContainer">
+                        <img id="royalSlider" src="./media/royal_bc1.jpg" alt="Royal Business Card"
+                            class="project-image">
+                        <button class="carousel-btn prev" onclick="manualPrevRoyalImage()"
+                            ontouchstart="manualPrevRoyalImage()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next" onclick="manualNextRoyalImage()"
+                            ontouchstart="manualNextRoyalImage()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Royal Business Card</h3>
+                        <p class="text-gray-300 text-sm mb-3">Luxury Identity Design</p>
+                        <p class="text-gray-400 text-xs mb-4">Sleek and elegant business card designs made for high-end
+                            brand presence and luxury appeal.</p>
+                        <a href="./media/royal_bc1.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Sample <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Static Projects -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <img src="./media/logo1.jpg" alt="Trekking Expeditions Tours Logo" class="project-image">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Trekking Expeditions Tours</h3>
+                        <p class="text-gray-300 text-sm mb-3">Brand Identity Design</p>
+                        <p class="text-gray-400 text-xs mb-4">Created a comprehensive logo design for a trekking
+                            company, incorporating mountain elements and adventure themes.</p>
+                        <a href="https://qamar-portfolio.vercel.app/media/logo1.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <img src="./media/cv_m.jpg" alt="Trekking Expeditions Tours Logo" class="project-image">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">Trekking Expeditions Tours</h3>
+                        <p class="text-gray-300 text-sm mb-3">Brand Identity Design</p>
+                        <p class="text-gray-400 text-xs mb-4">Created a comprehensive logo design for a trekking
+                            company, incorporating mountain elements and adventure themes.</p>
+                        <a href="https://qamar-portfolio.vercel.app/media/cv_m.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 - Medium -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <img src="./media/1.jpg" alt="KATT Logo" class="project-image">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">KATT</h3>
+                        <p class="text-gray-300 text-sm mb-3">Logo Design</p>
+                        <p class="text-gray-400 text-xs mb-4">Karakorum Adventure Treks Tours - A modern logo design
+                            reflecting adventure and professionalism.</p>
+                        <a href="https://qamar-portfolio.vercel.app/media/1.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 - Small -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <img src="./media/2.jpg" alt="Royal Pizza Hut Logo" class="project-image">
+                    <div class="p-3">
+                        <h3 class="text-base font-semibold mb-1 text-white">Royal Pizza Hut</h3>
+                        <p class="text-gray-300 text-xs mb-2">Restaurant Branding</p>
+                        <a href="https://qamar-portfolio.vercel.app/media/2.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-xs font-medium">
+                            View <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 - Large -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <img src="./media/q2.jpg" alt="The North Harvest Company Logo" class="project-image">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">The North Harvest Company</h3>
+                        <p class="text-gray-300 text-sm mb-3">Premium Brand Identity</p>
+                        <p class="text-gray-400 text-xs mb-4">Designed for a company providing pure shilajit from
+                            Himalaya and Karakorum Mountains. The logo reflects purity, nature, and premium quality.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span
+                                class="bg-green-600 bg-opacity-20 text-green-400 px-2 py-1 rounded text-xs">Organic</span>
+                            <span
+                                class="bg-blue-600 bg-opacity-20 text-blue-400 px-2 py-1 rounded text-xs">Premium</span>
+                        </div>
+                        <a href="https://qamar-portfolio.vercel.app/media/q2.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Project 6 - Medium -->
+            <div class="masonry-item">
+                <div class="project-card">
+                    <img src="./media/q1.jpg" alt="K2 Base Camp Trekkers Logo" class="project-image">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-white">K2 Base Camp Trekkers</h3>
+                        <p class="text-gray-300 text-sm mb-3">Adventure Tourism Brand</p>
+                        <p class="text-gray-400 text-xs mb-4">Logo design for K2 trekking specialists, incorporating
+                            mountain peaks and adventure elements.</p>
+                        <a href="media/logo2.jpg" target="_blank"
+                            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-medium">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="projects.js"></script>
+</body>
+
+</html>
